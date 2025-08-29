@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <style type="text/css">
+
+      .gallery
+      {
+        width:400px;
+        background-color: #212D40;
+        /* border: 4px solid red; */
+
+      }
+
+      .bg
+      {
+        background-color: #0E0004;
+        overflow-x: hidden;
+      }
+
+      .header
+      {
+        /* background-color: #31081F; */
+        color: white;
+        /* border: 4px solid red; */
+
+        padding-bottom: 40px;
+        padding-top: 40px;
+      }
+
+      .video-background {
+        position: relative;
+        width: 100%;
+        height: 250px; /* or whatever height you need */md   
+        object-fit: cover; /* ensures video covers div without stretching */
+        
+
+      }
+
+      .video-background video {
+        position: absolute;
+        /* top: 50%;
+        left: 50%; */
+        /* min-width: 100%;
+        min-height: 100%; */
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* transform: translate(-50%, -50%); */
+        object-fit: cover; /* ensures video covers div without stretching */
+        object-position: center;
+      }
+
+      .video-background .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .projectsbtn {
+
+        background-color: none;
+        color: white;
+        transition: transform 0.2s ease-in-out; /* smooth scaling */
+      }
+
+      .projectsbtn:hover {
+
+        color: rgb(231, 71, 71);
+        transform: scale(1.1); /* grow 10% */
+      }
+
+      .grid{
+        overflow-x: hidden;
+
+      }
+
+      .text{
+        color: white;
+        text-decoration: none;
+        transition: transform 0.2s ease-in-out; /* smooth scaling */
+        font-size: 40px;
+
+      }
+
+      .text:hover {
+
+        color: rgb(231, 71, 71);
+        transform: scale(1.1); /* grow 10% */
+      }
+      
+    </style>
+  
+  </head>
+  <body class="bg">
+    
+    
+    <!-- Header -->
+
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="Images\WebMTest2.webm" type="video/webm">
+      </video>
+
+      <div class="container-fluid header">
+        <div class="row">
+
+          <div class="col-md-4 text-center ">
+            <h1>Angel Rivera</h1>
+          </div>
+          
+          <div class="col-md-4 text-center ">
+          </div>
+          
+          <!-- <div class="col-2 text-center ">
+            <h1>Projects</h1>
+          </div> -->
+
+          <div class="col-md-2 text-center dropdown">
+            <button class="btn projectsbtn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <h2>Projects</h2>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="TempusLineus.html">TempusLineus</a></li>
+              <li><a class="dropdown-item" href="Echoes.html">Echoes Of Isovios</a></li>
+              <li><a class="dropdown-item" href="VRC.html">VrChat</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-md-2 text-center dropdown">
+            <button class="btn projectsbtn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <h2>About Me</h2>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Bio</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+    
+    
+    
+    </div>
+
+      
+    
+    </div>
+
+
+    <!-- Gallery -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 text-center">
+          <a class="text" href="Test.html">Echoes Of Isovios</a>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+
+    <div class="containter grid">
+        <div class="row">
+            <div class="col-4 text-center">
+                <img class="gallery rounded-3 img-fluid" src="Images\GunLegsAltFireGIF.gif" alt="">
+            </div>
+
+            <div class="col-4 text-center">
+                <img class="gallery rounded-3 img-fluid" src="Images\GunLegsWalk.gif" alt="">
+
+            </div>
+            
+            <div class="col-4 text-center">
+                <img class="gallery rounded-3 img-fluid" src="Images\GunLegsIdleFinal.gif" alt="">
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script> -->
+  </body>
+</html>
